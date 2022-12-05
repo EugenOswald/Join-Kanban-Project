@@ -1,0 +1,386 @@
+.main-add-task-container {
+	height: 100vh;
+	width: 100vw;
+	z-index: 15;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backdrop-filter: brightness(35%);
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.add-task-subcontainer {
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 87vh;
+	width: 72vw;
+	background: #f6f7f8;
+	border-radius: 30px;
+	z-index: 3;
+	position: relative;
+	color: white;
+}
+
+.close-add-task {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+.close-add-task img {
+	width: 20px;
+}
+
+.main-big-box-task-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 50px;
+	gap: 25px;
+	isolation: isolate;
+	width: 623px;
+	height: 700px;
+	background: #ffffff;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 30px;
+	position: relative;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.big-box-task-headline {
+	padding: 4px 36.5px;
+	gap: 10px;
+	background-color: lightgray;
+	width: 150px;
+	height: 40px;
+	border-radius: 8px;
+}
+
+.big-box-task-headline h4 {
+	font-weight: 400;
+	font-size: 27px;
+	color: #ffffff;
+}
+
+.big-box-task-title {
+	padding: 0px;
+	gap: 1px;
+	width: 523px;
+	height: 146px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.big-box-task-title h2 {
+	font-weight: 700;
+	font-size: 49px;
+	color: #2a3647;
+}
+
+.big-box-task-description span {
+	font-weight: 400;
+	font-size: 21px;
+}
+
+.big-box-task-date {
+	padding: 0px;
+	gap: 25px;
+	width: 270px;
+	height: 25px;
+}
+
+.big-box-task-date table tr td:first-child {
+	font-weight: 700;
+	font-size: 21px;
+	color: #000000;
+	width: 105px;
+	height: 25px;
+}
+
+.big-box-task-date table tr td:last-child {
+	width: 150px;
+	height: 25px;
+	font-weight: 400;
+	font-size: 21px;
+	color: #000000;
+}
+
+.big-box-task-prio {
+	padding: 0px;
+	gap: 25px;
+	width: 270px;
+	height: 33px;
+}
+
+.big-box-task-prio table tr td:first-child {
+	font-weight: 700;
+	font-size: 21px;
+	color: #000000;
+	width: 82px;
+	height: 25px;
+	padding-right: 8px;
+}
+
+.big-box-task-prio table tr td:last-child {
+	padding: 4px 18px;
+	gap: 10px;
+	width: 131px;
+	height: 33px;
+	background: #ff3d00;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+}
+
+.assigned-to-headline h4 {
+	font-weight: 700;
+	font-size: 21px;
+	color: #000000;
+}
+
+.close-big-box-task {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+.big-box-tasks-container-full-size {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	top: 0px;
+	justify-content: center;
+	padding-left: 232px;
+	padding-top: 80px;
+}
+
+.big-box-tasks-container-full-size2 {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	top: 0px;
+	justify-content: center;
+}
+
+.empty-space {
+	width: 250px;
+	min-height: 239px;
+	border-radius: 30px;
+	margin-bottom: 20px;
+	border: 2px dotted black;
+}
+
+.main-edit-container {
+	height: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.main-edit-container h3 {
+	font-size: 20px;
+}
+
+.edit-container-inputstyle {
+	width: 100%;
+	height: 45px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid lightgrey;
+	margin-bottom: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color: black;
+}
+
+.edit-prio-subcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.edit-headline input::placeholder {
+	color: gray;
+	font-size: 20px;
+}
+
+.edit-description textarea {
+	height: 120px;
+	width: 100%;
+	border-radius: 8px;
+	border-color: lightgray;
+	outline: none;
+	padding-left: 12px;
+	padding-right: 12px;
+	color: black;
+}
+
+.edit-description textarea::placeholder {
+	color: grey;
+	font-size: 20px;
+	height: 90%;
+	width: 100%;
+	padding-top: 8px;
+}
+
+.edit-date input::-webkit-calendar-picker-indicator:hover {
+	cursor: pointer;
+}
+
+.edit-prio {
+	margin-bottom: 12px;
+}
+
+.edit-prioclass {
+	border: 1px solid lightgray;
+	padding: 8px;
+	border-radius: 8px;
+	width: 125px;
+	color: black;
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+	height: 45px;
+	align-items: center;
+}
+
+.edit-prioclass:hover {
+	cursor: pointer;
+	box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 40%);
+	transition: all 225ms ease-in-out;
+}
+
+.edit-prioclass img {
+	height: 20px;
+	width: 20px;
+	object-fit: contain;
+	margin-left: 8px;
+}
+
+.edit-prioclass input {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+}
+
+.edit-prioclass label {
+	margin: 0px;
+}
+
+.close-edit-container {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+
+.change-edit-button button {
+	bottom: 25px;
+	right: 25px;
+	border: 1px solid lightgray;
+	border-radius: 8px;
+	padding: 8px;
+	width: 70px;
+	height: 50px;
+	background: #2a3647;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 225ms ease-in-out;
+	margin-top: 20px;
+}
+
+.change-edit-button div {
+	font-weight: bold;
+}
+
+.change-edit-button button:hover {
+	background: #0190e0 !important;
+}
+
+.change-edit-button img {
+	object-fit: cover;
+	height: 17px;
+	width: 17px;
+}
+
+.urgent-prio {
+	background: #ff3d00;
+	color: white;
+	font-weight: bold;
+	transition: all 225ms ease-in-out;
+	box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 40%);
+}
+
+.medium-prio {
+	background: #ffa800;
+	color: white;
+	font-weight: bold;
+	transition: all 225ms ease-in-out;
+	box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 40%);
+}
+
+.low-prio {
+	background: #7ae229;
+	color: white;
+	font-weight: bold;
+	transition: all 225ms ease-in-out;
+	box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 40%);
+}
+
+.edit-assignedTo select {
+	width: 100%;
+	height: 45px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid lightgrey;
+}
+
+.edit-assignedTo select {
+	padding-left: 12px;
+	font-size: 20px;
+}
+
+.edit-assignedTo-subcontainer {
+	width: 100%;
+	height: 45px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid lightgrey;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 20px;
+	color: black;
+	overflow-y: auto;
+}
+
+.edit-assignedTo-subcontainer div:first-child {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 12px;
+	padding-right: 12px;
+	position: relative;
+}
+
+.solo-worker-big-box {
+	display: flex;
+	align-items: center;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}

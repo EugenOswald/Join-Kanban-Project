@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- KOPFBEREICH STANDARD-->
+
+
+    <meta charset='UTF-8'> <!-- UTF-8 ist Standard, Alternativen: "ASCII" oder "ISO-8859-15" -->
+    <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sorgt für Barrierefreiheit -->
+
+    <title>JOIN - Board</title>
+    <!--See Trello, Jira or kanbanflow-->
+    <!--ToDos, In Progress, Backlog, Testing-->
+    <!--Help-Sektion: Beschreibung wie es geht-->
+    <!--Impressum & Datenschutz unten links in grau-->
+    <!--Daten sollen auf Server mit smallest-backend-ever gespeichert werden-->
+    <!--Learnings von Kochwelt-->
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap CSS only -->
+
+    <link href="img/favicon.ico" type="image/x-icon" rel="icon" /> <!-- Bindet FavIcon ein-->
+
+    <!-- Fonts downloaden in entsprechenden Ordner legen und über Extra-CSS-Datei einbinden (https://google-webfonts-helper.herokuapp.com/) -->
+    <link rel="stylesheet" type='text/css' media='screen' href="css/fonts.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css/style.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board2.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board3.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board_resp.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board_resp2.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board_resp3.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css//board/board_resp4.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css/addtask.css">
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bootstrap -->
+
+    <script src="js/mini_backend.js"></script> <!-- Zuerst einbinden, weil Funktion setURL verfügbar sein muss -->
+    <script src="js/script.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js//board/board.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js//board/board2.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js//board/board3.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/summary.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/addTask.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="templates/template.js"></script>
+    <script src="js/contacts.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/help.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/login.js"></script>
+    <script src="js/dummy.js"></script>
+
+
+    <!-- KOPFBEREICH STANDARD-->
+</head>
+
+
+<!--Sobald der body-Bereich geladen wurde, wird das Java-Script ausgeführt-->
+
+<body onload="includeHTML();setactUser();loadInit();loadAddTask();sectionSelected('board')">
+    <!--setactUser()-->
+
+
+    <!-- Header einbinden -->
+    <div w3-include-html="templates/header.html"></div>
+    <!-- Header einbinden -->
+
+    <!-- MAIN -->
+
+    <div id="main-board-container" class="main-board-container">
+        <div class="main-headline-container">
+            <div class="headline-navbar">
+                <div class="headline-board">
+                    <h4 class="footer-slogan">Kanban Project Management Tool</h4>
+                    <h2>Board</h2>
+                    <div class="search-task-phone d-none"><input
+                            onkeyup="checkEmptyField('user-search-phone'); enterEventSearchTask('search-task-btn-phone')"
+                            id="user-search-phone" placeholder="Find Task">
+                        <div id="search-task-btn-phone"
+                            onclick="searchTask('user-search-phone'); checkEmptyField('user-search-phone')"
+                            class="search-btn"><img class="search-img c-pointer" src="./img/board/search.png"></div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="search-task"><input
+                            onkeyup="checkEmptyField('user-search'); enterEventSearchTask('search-task-btn')"
+                            id="user-search" placeholder="Find Task">
+                        <div id="search-task-btn" onclick="searchTask('user-search'); checkEmptyField('user-search')"
+                            class="search-btn"><img class="search-img c-pointer" src="./img/board/search.png"></div>
+                    </div>
+                    <div class="add-task">
+                        <button onclick="addTaskBoard()" class="add-task-button d-center">
+                            <span>Add task</span><img src="./img/board/add.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STICKY HEADLINES // ERSMAL D-NONE -->
+        <div class="headline-tasks">
+
+            <div class="headline-task">
+                <h3>To do</h3>
+                <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png"></div>
+            </div>
+            <div class="headline-task">
+                <h3>In progress</h3>
+                <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png"></div>
+            </div>
+            <div class="headline-task">
+                <h3>Awaiting feedback</h3>
+                <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png"></div>
+            </div>
+            <div class="headline-task">
+                <h3>Done</h3>
+                <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png"></div>
+            </div>
+        </div>
+
+
+
+        <div id="main-task-container" class="main-tasks-container c-pointer">
+            <div class="main-solo-task-container" id="main-todo" ondrop="moveTo('To do')" ondragover="allowDrop(event)">
+                <div class="headline-task-phone">
+                    <h3>To do</h3>
+                    <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png">
+                    </div>
+                </div>
+                <div id="category-todo" class="category-status-container">
+                </div>
+                <div id="empty-space-todo" class="empty-space d-none"></div>
+            </div>
+
+            <div class="main-solo-task-container" id="main-progress" ondrop="moveTo('In progress')"
+                ondragover="allowDrop(event)">
+                <div class="headline-task-phone">
+                    <h3>In progress</h3>
+                    <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png">
+                    </div>
+                </div>
+                <div id="category-progress" class="category-status-container"></div>
+                <div id="empty-space-progress" class="empty-space d-none"></div>
+            </div>
+
+            <div class="main-solo-task-container" id="main-feedback" ondrop="moveTo('Awaiting feedback')"
+                ondragover="allowDrop(event)">
+                <div class="headline-task-phone">
+                    <h3>Awaiting Feedback</h3>
+                    <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png">
+                    </div>
+                </div>
+                <div id="category-feedback" class="category-status-container"></div>
+                <div id="empty-space-feedback" class="empty-space d-none"></div>
+            </div>
+
+            <div class="main-solo-task-container" id="done" ondrop="moveTo('Done')" ondragover="allowDrop(event)">
+                <div class="headline-task-phone">
+                    <h3>Done</h3>
+                    <div class="add-image d-center"><img onclick="addTaskBoard()" src="./img/board/plus-button.png">
+                    </div>
+                </div>
+                <div id="category-done" class="category-status-container"></div>
+                <div id="empty-space-done" class="empty-space d-none"></div>
+            </div>
+        </div>
+
+        <div onclick="closeAddTaskContainer()" id="main-add-task-container"
+            class="main-add-task-container d-none d-center ">
+            <div onclick="doNotClose(event)" class="add-task-subcontainer d-center animationFadeIn">
+                <div onclick="closeAddTaskContainer()" class="close-add-task c-pointer"><img
+                        src="./img/board/close.png"></div>
+                <!-- AddTask Tamplate einbindung -->
+                <div w3-include-html="templates/addTaskTemplate.html"></div>
+                <!-- AddTask Tamplate einbindung -->
+            </div>
+        </div>
+        <div id="background-alert" class="alert-background d-none">
+            <div id="succes-alert" class="succes-alert d-none d-center">Task changed successfully</div>
+            <div id="delete-alert" class="succes-alert d-none d-center">Task deleted successfully</div>
+        </div>
+    </div>
+
+    <div id="main-bigbox-solo-task-container" class="big-box-tasks-container-full-size d-none"></div>
+
+    <!-- MAIN -->
+
+    <!-- Footer einbinden -->
+    <div w3-include-html="templates/footer.html"></div>
+    <!-- Footer einbinden -->
+
+
+</body>
+
+
+
+</html>

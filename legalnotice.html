@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- KOPFBEREICH STANDARD-->
+
+
+    <meta charset='UTF-8'> <!-- UTF-8 ist Standard, Alternativen: "ASCII" oder "ISO-8859-15" -->
+    <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sorgt für Barrierefreiheit -->
+
+    <title>JOIN - Legal Notice</title>
+    <!--See Trello, Jira or kanbanflow-->
+    <!--ToDos, In Progress, Backlog, Testing-->
+    <!--Help-Sektion: Beschreibung wie es geht-->
+    <!--Impressum & Datenschutz unten links in grau-->
+    <!--Daten sollen auf Server mit smallest-backend-ever gespeichert werden-->
+    <!--Learnings von Kochwelt-->
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap CSS only -->
+
+    <link href="img/favicon.ico" type="image/x-icon" rel="icon" /> <!-- Bindet FavIcon ein-->
+
+    <!-- Fonts downloaden in entsprechenden Ordner legen und über Extra-CSS-Datei einbinden (https://google-webfonts-helper.herokuapp.com/) -->
+    <link rel="stylesheet" type='text/css' media='screen' href="css/fonts.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css/style.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css/legalnotice.css">
+
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bootstrap -->
+
+    <script src="js/mini_backend.js"></script> <!-- Zuerst einbinden, weil Funktion setURL verfügbar sein muss -->
+    <script src="js/script.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js//board/board.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js//board/board2.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js//board/board3.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/summary.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/addtask.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/contacts.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/help.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/login.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/legalnotice.js"></script> <!-- Statt <script> ... </script> -->
+    <script src="js/dummy.js"></script>
+    <!-- KOPFBEREICH STANDARD-->
+</head>
+
+
+<!--Sobald der body-Bereich geladen wurde, wird das Java-Script ausgeführt-->
+
+<body onload="includeHTML();setactUser();sectionSelected('legalnotice')">
+
+    <!-- Header einbinden -->
+    <div w3-include-html="templates/header.html"></div>
+    <!-- Header einbinden -->
+
+
+    <!-- MAIN -->
+    <div class="legalnotice-container">
+
+        <div class="mobile-headline">
+            <span id="mobile-tool-title">Kanban Project Management Tool</span>
+        </div>
+        <img onclick="backtoSummary();" class="backbutton" src="img/black-arrow2.png">
+
+
+        <h1>Legal Notice</h1>
+
+        <div class="subsection">
+            <div><b>Declarations according to § 5 TMG:</b>
+                Tobias Ullrich &nbsp;∙&nbsp;
+                Michael-Imhof-Str. 11 &nbsp;∙&nbsp;
+                86609 Donauwörth</div>
+            <div><b>Contact:</b>
+                Phone:
+                0177 345 85 44 &nbsp;∙&nbsp;
+                E-Mail:
+                ullrich.tobias@gmx.de</div>
+        </div>
+
+        <div class="subsection">
+            <h2>Liability for content</h2>
+            <span>All contents of our website have been created with the utmost care and to the best of our knowledge.
+                However, we cannot guarantee the accuracy, completeness and timeliness of the content. As a service
+                provider, we are responsible for our own content on these pages in accordance with § 7 paragraph 1 TMG
+                under the general laws.
+                According to §§ 8 to 10 TMG, however, we are not obligated as a service provider to monitor transmitted
+                or stored third-party information or to investigate circumstances that indicate illegal activity.
+                Obligations to remove or block the use of information according to general laws remain unaffected.
+                However, liability in this regard is only possible from the point in time at which a concrete
+                infringement of the law becomes known. If we become aware of the above-mentioned infringements, we will
+                remove this content immediately.
+            </span>
+        </div>
+
+        <div class="subsection">
+            <h2>Liability for links</h2>
+            <span>Our website contains links to external websites of third parties. We have no influence on the content
+                of these directly or indirectly linked websites. Therefore, we cannot guarantee the correctness of the
+                contents of the "external links". The respective providers or operators (authors) of the sites are
+                responsible for the content of the external links. The external links were checked for possible legal
+                violations at the time of linking and were free of illegal content at the time of linking.
+                A constant review of the contents of the external links is not possible without concrete evidence of a
+                violation of the law.
+                In the case of direct or indirect links to the websites of third parties that lie outside our area of
+                responsibility, a liability obligation would only exist in the case where we become aware of the content
+                and it would be technically possible and reasonable for us to prevent use in the case of illegal
+                content. This disclaimer also applies to links and references within our own website "Name of your
+                domain" from questioners, bloggers, guests of the discussion forum.
+                For illegal, incorrect or incomplete contents and in particular for damage, which develops from the use
+                or disuse of such presented information, alone the service provider of the side, to which one referred,
+                is responsible in particular that, which refers over left to the respective publication only. If we
+                become aware of any legal violations, we will remove the external links immediately.
+            </span>
+        </div>
+
+        <div class="subsection">
+            <h2>Copyright</h2>
+            <span style="overflow-wrap: break-word;">The content and works published on our website are subject to
+                German copyright law.
+                The reproduction, editing, distribution and any kind of exploitation of intellectual property in ideal
+                and material view of the author outside the limits of copyright require the prior written consent of the
+                respective author in the sense of copyright law.
+                Downloads and copies of this site are only allowed for private and non-commercial use. If the content on
+                our website was not created by us, the copyrights of third parties must be observed. The contents of
+                third parties are marked as such. Should you nevertheless become aware of a copyright infringement,
+                please inform us accordingly. If we become aware of any infringements, we will remove such content
+                immediately. This imprint was kindly provided by www.jurarat.de.
+            </span>
+        </div>
+
+    </div>
+    <!-- MAIN -->
+
+
+    <!-- Footer einbinden -->
+    <div w3-include-html="templates/footer.html"></div>
+    <!-- Footer einbinden -->
+
+
+</body>
+
+
+
+</html>

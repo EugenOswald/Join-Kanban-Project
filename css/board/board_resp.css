@@ -1,0 +1,137 @@
+/* RESPONSIVE_ANSICHT */
+@media (min-width: 1501px) and (max-width: 1650px) {
+	.headline-task {
+		width: 270px;
+	}
+}
+
+@media (min-width: 1450px) and (max-width: 1500px) {
+	.headline-task {
+		width: 250px;
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1449px) {
+	.headline-task {
+		width: 270px;
+		justify-content: space-around;
+	}
+}
+
+@media (min-width: 1180px) and (max-width: 1399px) {
+	.headline-navbar {
+		height: 120px;
+	}
+
+	.headline-task {
+		width: 270px;
+		justify-content: space-around;
+	}
+
+	.headline-task-phone h3 {
+		font-size: 27px;
+	}
+
+	.category-status-container {
+		width: 90%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.workers-prio {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.main-task-container {
+		width: 180px;
+	}
+
+	.headline-task h3 {
+		font-size: 18px;
+	}
+
+	.empty-space {
+		width: 170px;
+	}
+
+	.worker-name-start-letters {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1179px) {
+	.headline-solo-task {
+		width: 90px;
+	}
+
+	.headline-solo-task h3 {
+		font-size: 14px;
+	}
+	.task-title span {
+		font-size: 12px;
+	}
+
+	.headline-navbar {
+		height: 120px;
+	}
+
+	.headline-task {
+		width: 270px;
+		justify-content: space-around;
+	}
+
+	.headline-task-phone h3 {
+		font-size: 22px;
+	}
+
+	.category-status-container {
+		width: 90%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: auto;
+		box-sizing: border-box;
+		margin-bottom: 0px;
+	}
+
+
+	.main-task-container {
+		width: 120px;
+		height: 150px;
+		padding: 24px 12px;
+	}
+
+	.headline-task h3 {
+		font-size: 12px;
+	}
+
+	.empty-space {
+		width: 100px;
+		min-height: 120px;
+	}
+
+	.worker-name-start-letters {
+		width: 30px;
+		height: 30px;
+	}
+
+	.task-description span {
+		display: none;
+	}
+
+	.workers-prio {
+		padding-left: 0px;
+		padding-right: 18px;
+	}
+
+	.main-workers{
+		display: none;
+	}
+}

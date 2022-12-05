@@ -1,0 +1,295 @@
+@media (min-width: 450px) and (max-width: 719px) {
+	.header {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		bottom: 0;
+		background-color: #2a3647;
+		height: 80px;
+		width: 100vw;
+		font-size: 16px;
+		z-index: 11;
+	}
+
+	.header-logo {
+		display: none;
+	}
+
+	.header-navigation {
+		height: 100%;
+		align-items: center;
+		width: 100%;
+		justify-content: space-evenly;
+		display: flex;
+		flex-direction: unset;
+	}
+
+	.header-summary {
+		margin-top: 0px;
+	}
+
+	.header-legnotice {
+		margin-top: 0px;
+		height: auto;
+		width: auto;
+	}
+
+	.main-board-container {
+		padding-left: 0px;
+	}
+
+	.footer {
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.footer-slogan {
+		display: flex;
+		width: 390px;
+		font-size: 20px;
+	}
+
+	.headline-task {
+		width: 270px;
+		justify-content: space-around;
+	}
+
+	.headline-tasks {
+		display: none;
+	}
+
+	.main-task-container {
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-evenly;
+		height: 250px;
+	}
+
+	.main-tasks-container {
+		flex-direction: column;
+		overflow-y: visible;
+		height: 100%;
+	}
+
+	.headline-task-phone {
+		display: flex;
+		width: 110%;
+	}
+
+	.headline-task-phone h3 {
+		font-size: 27px;
+	}
+
+	.main-solo-task-container {
+		width: 90%;
+		height: auto;
+		margin-bottom: 35px;
+	}
+
+	.category-status-container {
+		width: 110%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.headline-solo-task {
+		width: 100%;
+		height: 35px;
+	}
+
+	.headline-solo-task h3 {
+		font-size: 22px;
+	}
+
+	.task-title span {
+		font-size: 22px;
+	}
+
+	.task-description span {
+		font-size: 20px;
+	}
+
+	.workers-prio {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.prio-img img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.navbar {
+		width: 234px;
+	}
+
+	.search-task {
+		display: none;
+	}
+
+	.search-task-phone {
+		display: flex !important;
+		justify-content: space-between;
+		width: 83vw;
+	}
+
+	.big-box-tasks-container-full-size {
+		padding-left: 0px;
+		padding-top: 0px;
+		z-index: 100;
+	}
+
+	.main-headline-container {
+		margin-bottom: 155px;
+	}
+
+	.add-task-button {
+		width: 50px;
+		position: absolute;
+		right: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 25px;
+	}
+
+	.add-task-button span {
+		display: none;
+	}
+
+	.add-task-button img {
+		width: 25px;
+		height: 25px;
+		object-fit: none;
+	}
+
+	.headline-category {
+		width: 230px;
+	}
+
+	.big-box-task-title h2 {
+		font-size: 21px;
+	}
+
+	.big-box-task-description span {
+		width: 100%;
+		height: auto;
+		font-size: 16px;
+	}
+
+	.big-box-task-date table tr td:first-child {
+		font-size: 18px;
+	}
+
+	.big-box-task-date table tr td:last-child {
+		font-size: 18px;
+	}
+
+	.big-box-task-prio table tr td:first-child {
+		font-size: 18px;
+	}
+
+	.assigned-to-headline h4 {
+		font-size: 18px;
+	}
+
+	.edit-worker-fullname {
+		font-size: 18px;
+	}
+
+	.solo-worker-big-box {
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+
+	.main-edit-container {
+		padding-top: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.change-edit-button button {
+		bottom: 40px;
+	}
+
+	.main-big-box-task-container {
+		height: 100%;
+		z-index: 15;
+		width: 100%;
+		padding: 50px;
+		border-radius: 0;
+	}
+
+	.edit-button {
+		bottom: 90px;
+	}
+
+	.delete-button {
+		bottom: 90px;
+	}
+
+	.close-task-phone {
+		opacity: 1 !important;
+	}
+
+	.close-task {
+		display: none;
+	}
+
+	.big-box-task-title {
+		width: 100%;
+		height: auto;
+	}
+
+	.big-box-task-title span {
+		width: 100%;
+		height: auto;
+	}
+
+	.big-box-task-description {
+		width: 100%;
+	}
+
+	.main-assigned-to {
+		max-height: 415px;
+		overflow-y: hidden;
+		overflow: auto;
+	}
+
+	.assigned-to-workers {
+		max-height: 355px;
+		overflow-y: hidden;
+		overflow: auto;
+	}
+
+	.edit-headline input::placeholder {
+		font-size: 16px;
+	}
+
+	.edit-description textarea::placeholder {
+		font-size: 16px;
+		padding-top: 8px;
+		width: 100%;
+	}
+
+	.new-status {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		padding: 8px;
+	}
+
+	.buffer-box {
+		position: absolute;
+		width: 100vw;
+		height: 60px;
+		bottom: 80px;
+		background-color: #f6f7f8;
+	}
+}

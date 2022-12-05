@@ -1,0 +1,3 @@
+{
+	"users": "[{\"name\":\"Tobias\",\"surname\":\"Ullrich\",\"picture\":\"tobias.jpg\",\"email\":\"ullrich.tobias@gmx.de\",\"password\":\"lol123\"},{\"name\":\"Edip\",\"surname\":\"Bahcecioglu\",\"picture\":\"edip.jpg\",\"email\":\"edip-bahcecioglu@hotmail.de\",\"password\":\"xxx\"},{\"name\":\"Eugen\",\"surname\":\"Oswald\",\"picture\":\"eugen.jpg\",\"email\":\"oswaldeugen95@gmail.com\",\"password\":\"xxx\"},{\"name\":\"Marcel\",\"picture\":\"radndomprofilepicture.webp\",\"email\":\"marcel@web.de\",\"phone\":\"\",\"password\":\"z6Tee\"},{\"name\":\"dsfzzzz\",\"picture\":\"randomprofilepicture.webp\",\"email\":\"sdf@web.de\",\"phone\":\"\",\"password\":\"sdfdsf\"}]"
+}

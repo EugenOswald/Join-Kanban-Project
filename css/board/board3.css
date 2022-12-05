@@ -1,0 +1,145 @@
+.edit-worker-fullname {
+	margin-left: 18px;
+	font-size: 20px;
+}
+
+.solo-contact {
+	width: 100%;
+	height: 45px;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 20px;
+	color: black;
+}
+
+.solo-contact:hover {
+	background-color: lightgray;
+}
+
+.edit-assign-full-size {
+	height: 170px;
+}
+
+.edit-assign-img-rotate {
+	transform: rotate(180deg);
+}
+
+.edit-assign-colum {
+	flex-direction: column !important;
+}
+
+.placeholder-grey {
+	color: black;
+}
+
+.succes-alert {
+	background: #00c851;
+	color: white;
+	height: 50px;
+	width: 275px;
+	position: absolute;
+	border-radius: 12px;
+	padding: 8px;
+	transition: all 500ms ease-in-out;
+}
+
+.checkCheckboxes {
+	height: 0px;
+	width: 0px;
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	z-index: -1;
+}
+
+.footer-slogan {
+	display: none;
+}
+
+.close-task-phone {
+	opacity: 0;
+}
+
+.new-task-status {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.new-status {
+	padding: 8px;
+	border-radius: 12px;
+	border: 1px solid lightgray;
+	color: black;
+	text-align: center;
+}
+
+.new-status-highlight {
+	background-color: #2a3647;
+	color: white;
+}
+
+.category-status-container {
+	margin-bottom: 50px;
+}
+
+.buttons-big-box {
+	display: flex;
+	justify-content: flex-end;
+	bottom: 15px;
+	right: 25px;
+}
+
+.buttons-big-box div {
+	height: 57px;
+	width: 57px;
+	background: #2a3647;
+	border-radius: 18px;
+	transition: all 225ms ease-in-out;
+	margin-left: 8px;
+}
+
+.alert-background {
+	z-index: 100;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.worker-name-start-letters-board{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 8px;
+    gap: 0px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    border-radius: 58px;
+    color: white;
+	    margin-bottom: 10px;
+}
+
+.selceted-worker-letter-board{
+	padding: 10px 12px;
+	gap: 0px;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #ffffff;
+	border-radius: 58px;
+	color: white;
+	margin-left: -10px;
+}

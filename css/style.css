@@ -1,0 +1,481 @@
+html {
+	scroll-behavior: smooth;
+	/* Standard */
+}
+
+body {
+	margin: 0px;
+	/* Browser-Standard rückgängig machen: Äußerer Abstand */
+	font-family: "Inter";
+	/* Schriftart für den ganzen Body-Bereich festlegen */
+	overflow-x: hidden;
+	/* Standard: Was auf der X-Achse aus dem Body/Tag rausläuft wird nicht mehr gezeigt */
+	/* muss dem Body gegeben werden, ABER funktioniert nicht auf dem Handy -> Lösung: Alles in eine <div> was in <body> ist und diesem <div> das overflow-Attribut geben */
+}
+
+/*  HEADER  */
+.header-logo {
+	margin: 50px;
+}
+
+.header {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: 0;
+	background-color: #2a3647;
+	height: 100%;
+	width: 232px;
+	font-size: 16px;
+}
+
+.header-navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: calc(100vh - 102px - 50px - 50px);
+	width: 100%;
+}
+
+.header-navigation-menupoints {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	color: white;
+	text-decoration: none;
+}
+
+.header-navigation a:hover {
+	background-color: #091931;
+	color: white;
+}
+
+.header-img-container {
+	display: flex;
+	justify-content: center;
+	width: 40%;
+}
+
+.header span {
+	width: 60%;
+}
+
+.header-legnotice {
+	margin-top: 42vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+
+.header-summary {
+	margin-top: 50px;
+}
+
+/* FOOTER  */
+.footer {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	background-color: #ffffff;
+	width: calc(100vw - 232px);
+	margin-left: 232px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer h1 {
+	font-size: 21px;
+	margin-left: calc(60px + 60px);
+}
+
+.footer-headline {
+	display: flex;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.footer-user {
+	border-radius: 100%;
+	height: 60px;
+	margin: 25px;
+	border: 2px solid #2a3647;
+}
+
+.footer img:hover {
+	cursor: pointer;
+}
+
+.footer-logout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 19px;
+	top: 81px;
+	color: white;
+	font-size: 16px;
+	height: 53px;
+	width: 130px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #091931;
+}
+
+.footer-logout:hover {
+	cursor: pointer;
+}
+
+.footer-logo {
+	display: none;
+}
+
+.footer-help {
+	display: none;
+}
+
+.footer-legnotice {
+	display: none;
+}
+
+.footer-links {
+	color: white;
+	text-decoration: none;
+}
+.footer-links:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/*  GENERAL */
+.selected {
+	background-color: #091931;
+	color: white;
+}
+
+/* INTERVALLE FÜRS HANDY */
+@media (min-width: 951px) and (max-width: 1100px) {
+	.footer {
+		z-index: 10;
+	}
+
+	.footer h1 {
+		margin-left: 90px;
+	}
+}
+@media (min-width: 901px) and (max-width: 950px) {
+	.footer h1 {
+		margin-left: 50px;
+	}
+}
+@media (min-width: 351px) and (max-width: 900px) {
+	.header-logo {
+		display: none;
+	}
+
+	.header {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		bottom: 0;
+		background-color: #2a3647;
+		height: 80px;
+		width: 100%;
+		font-size: 16px;
+		z-index: 16;
+	}
+	.header span {
+		text-align: center;
+		padding-top: 10px;
+		width: 100%;
+	}
+	.header-summary {
+		margin-top: 0;
+	}
+	.header-navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.header-navigation-menupoints {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		color: white;
+		text-decoration: none;
+	}
+	.header-navigation-menupoints img {
+		height: 25px;
+		width: 25px;
+	}
+	.header-legnotice {
+		display: none;
+		margin-top: 0;
+	}
+
+	/* FOOTER  */
+	.footer {
+		width: 100%;
+		margin-left: 0;
+		z-index: 10;
+	}
+	#footer-help {
+		display: none;
+	}
+	.footer-headline {
+		display: none;
+	}
+	.footer-logo {
+		display: flex;
+		width: 32px;
+		height: 39px;
+		margin: 20px;
+		cursor: default !important;
+	}
+	.footer-help {
+		display: flex;
+		width: 100%;
+	}
+
+	.footer-legnotice {
+		display: flex;
+		width: 100%;
+	}
+
+	.footer-logout2 {
+		width: 100%;
+	}
+
+	.footer-logout {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 100px;
+		padding-left: 20px;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+	.header-logo {
+		display: none;
+	}
+
+	.header {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		bottom: 0;
+		background-color: #2a3647;
+		height: 80px;
+		width: 100%;
+		font-size: 16px;
+		z-index: 11;
+	}
+	.header span {
+		text-align: center;
+		padding-top: 10px;
+		width: 100%;
+	}
+	.header-summary {
+		margin-top: 0;
+	}
+	.header-navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+	}
+	.header-navigation-menupoints {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		color: white;
+		text-decoration: none;
+	}
+	.header-navigation-menupoints img {
+		height: 25px;
+		width: 25px;
+	}
+	.header-legnotice {
+		display: none;
+		margin-top: 0;
+	}
+
+	/* FOOTER  */
+	.footer {
+		width: 100%;
+		margin-left: 0;
+		z-index: 10;
+	}
+	#footer-help {
+		display: none;
+	}
+	.footer-headline {
+		display: none;
+	}
+	.footer-logo {
+		display: flex;
+		width: 32px;
+		height: 39px;
+		margin: 20px;
+		cursor: default !important;
+	}
+	.footer-help {
+		display: flex;
+		width: 100%;
+	}
+
+	.footer-legnotice {
+		display: flex;
+		width: 100%;
+	}
+
+	.footer-logout2 {
+		width: 100%;
+	}
+
+	.footer-logout {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 100px;
+		padding-left: 20px;
+	}
+}
+
+@media (min-width: 280px) and (max-width: 299px) {
+	.header-logo {
+		display: none;
+	}
+
+	.header {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		bottom: 0;
+		background-color: #2a3647;
+		height: 80px;
+		width: 100%;
+		font-size: 16px;
+		z-index: 11;
+	}
+	.header span {
+		text-align: center;
+		padding-top: 10px;
+		width: 100%;
+	}
+	.header-summary {
+		margin-top: 0;
+	}
+	.header-navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+	}
+	.header-navigation-menupoints {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		color: white;
+		text-decoration: none;
+	}
+	.header-navigation-menupoints img {
+		height: 25px;
+		width: 25px;
+	}
+	.header-legnotice {
+		display: none;
+		margin-top: 0;
+	}
+
+	/* FOOTER  */
+	.footer {
+		z-index: 13;
+		width: 100%;
+		margin-left: 0;
+	}
+	#footer-help {
+		display: none;
+	}
+	.footer-headline {
+		display: none;
+	}
+	.footer-logo {
+		display: flex;
+		width: 32px;
+		height: 39px;
+		margin: 20px;
+		cursor: default !important;
+	}
+	.footer-help {
+		display: flex;
+		width: 100%;
+	}
+
+	.footer-legnotice {
+		display: flex;
+		width: 100%;
+	}
+
+	.footer-logout2 {
+		width: 100%;
+	}
+
+	.footer-logout {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 100px;
+		padding-left: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 279px) {
+	/* Ab hier leer lassen */
+}
+
+/* For NestHub */
+@media (width: 1024px) and (height: 600px) {
+	.header {
+		z-index: 10;
+	}
+
+	.header-legnotice {
+		margin-top: 12vh;
+	}
+}
+
+/* For NestHub Max */
+@media (width: 1280px) and (height: 800px) {
+	.header-legnotice {
+		margin-top: 12vh;
+	}
+	.header {
+		z-index: 10;
+	}
+}

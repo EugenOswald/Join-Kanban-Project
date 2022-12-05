@@ -1,0 +1,388 @@
+@media (min-width: 280px) and (max-width: 449px) {
+	.header {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		bottom: 0;
+		background-color: #2a3647;
+		height: 80px;
+		width: 100vw;
+		font-size: 16px;
+		z-index: 11;
+	}
+
+	.header-logo {
+		display: none;
+	}
+
+	.header-navigation {
+		height: 100%;
+		align-items: center;
+		width: 100%;
+		justify-content: space-evenly;
+		display: flex;
+		flex-direction: unset;
+	}
+
+	.header-summary {
+		margin-top: 0px;
+	}
+
+	.header-legnotice {
+		margin-top: 0px;
+		height: auto;
+		width: auto;
+	}
+
+	.main-board-container {
+		padding-left: 0px;
+	}
+
+	.footer {
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.footer-slogan {
+		display: flex;
+		width: 250px;
+		font-size: 14px;
+	}
+
+	.headline-task {
+		width: 270px;
+		justify-content: space-around;
+	}
+
+	.headline-tasks {
+		display: none;
+	}
+
+	.headline-board h2 {
+		font-size: 40px;
+	}
+
+	.main-task-container {
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-evenly;
+		height: 250px;
+	}
+
+	.main-tasks-container {
+		flex-direction: column;
+		overflow-y: visible;
+		height: 100%;
+	}
+
+	.headline-task-phone {
+		display: flex;
+		width: 110%;
+	}
+
+	.headline-navbar {
+		margin-top: 40px;
+	}
+
+	.headline-task-phone h3 {
+		font-size: 27px;
+	}
+
+	.main-solo-task-container {
+		width: 90%;
+		height: auto;
+		margin-bottom: 35px;
+	}
+
+	.category-status-container {
+		width: 110%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.headline-solo-task {
+		width: 100%;
+		height: 35px;
+	}
+
+	.headline-solo-task h3 {
+		font-size: 22px;
+	}
+
+	.task-title span {
+		font-size: 22px;
+	}
+
+	.task-description span {
+		font-size: 20px;
+	}
+
+	.workers-prio {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	.prio-img img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.navbar {
+		width: 234px;
+	}
+
+	.search-task {
+		display: none;
+	}
+
+	.search-task-phone {
+		display: flex !important;
+		justify-content: space-between;
+		width: 78vw;
+	}
+
+	.search-task-phone input {
+		width: 105px;
+	}
+
+	.big-box-tasks-container-full-size {
+		padding-left: 0px;
+		padding-top: 0px;
+		z-index: 100;
+	}
+
+	.main-headline-container {
+		margin-bottom: 55px;
+	}
+
+	.add-task-button {
+		width: 36px;
+		height: 30px;
+		position: absolute;
+		right: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 19px;
+	}
+
+	.add-task-button img {
+		height: 20px;
+		width: 20px;
+		object-fit: cover;
+	}
+
+	.add-task-button span {
+		display: none;
+	}
+
+	.headline-category {
+		width: 100%;
+	}
+
+	.main-big-box-task-container {
+		height: 100%;
+		z-index: 15;
+		width: 100%;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 5px;
+		border-radius: 0px;
+	}
+
+	.big-box-task-title {
+		width: 100%;
+		height: auto;
+	}
+
+	.big-box-task-title h2 {
+		font-size: 18px;
+	}
+
+	.big-box-task-title span {
+		width: 100%;
+		height: auto;
+	}
+
+	.big-box-task-description {
+		width: 100%;
+	}
+
+	.big-box-task-description span {
+		font-size: 18px;
+	}
+
+	.big-box-task-date table tr td:first-child {
+		font-size: 18px;
+	}
+
+	.big-box-task-date table tr td:last-child {
+		font-size: 18px;
+	}
+
+	.big-box-task-prio table tr td:first-child {
+		font-size: 18px;
+	}
+
+	.assigned-to-headline h4 {
+		font-size: 18px;
+	}
+
+	.edit-worker-fullname {
+		font-size: 18px;
+	}
+
+	.edit-button {
+		bottom: 90px;
+	}
+
+	.delete-button {
+		bottom: 90px;
+	}
+
+	.close-task-phone {
+		opacity: 1 !important;
+	}
+
+	.close-task {
+		display: none;
+	}
+
+	.solo-worker-big-box {
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+
+	.headline-solo-task {
+		font-size: 18px;
+	}
+
+	.task-title span {
+		font-size: 18px;
+	}
+
+	.task-description span {
+		font-size: 16px;
+	}
+
+	.prio-img img {
+		height: 30px;
+		width: 30px;
+	}
+
+	.main-edit-container {
+		padding-top: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.change-edit-button button {
+		bottom: 100px;
+	}
+
+	.edit-prioclass {
+		width: 180px;
+		height: 35px;
+		font-size: 10px;
+	}
+
+	.edit-prioclass img {
+		height: 15px;
+		width: 15px;
+	}
+
+	.edit-assignedTo-subcontainer div:first-child {
+		font-size: 14px;
+	}
+
+	.main-assigned-to {
+		max-height: 415px;
+		overflow-y: hidden;
+		overflow: auto;
+	}
+
+	.assigned-to-workers {
+		max-height: 390px;
+		overflow-y: hidden;
+		overflow: auto;
+	}
+
+	.edit-headline input::placeholder {
+		font-size: 12px;
+	}
+
+	.edit-description textarea::placeholder {
+		font-size: 12px;
+		padding-top: 8px;
+		width: 100%;
+	}
+
+	.new-status {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+	}
+
+	.buttons-big-box div {
+		height: 45px;
+		width: 45px;
+	}
+
+	.buttons-big-box div:last-child {
+		margin-right: 8px;
+	}
+}
+
+@media (min-height: 750px) and (max-height: 900px) and (max-width: 900px) {
+	.main-tasks-container {
+		margin-top: 80px;
+		overflow-y: visible;
+		height: 100%;
+	}
+}
+
+@media (min-height: 750px) and (max-height: 900px) and (max-width: 720px) {
+	.main-tasks-container {
+		margin-top: -50px;
+		overflow-y: visible;
+		height: 100%;
+	}
+}
+
+@media (min-height: 600px) and (max-height: 749px) and (max-width: 1300px) {
+	.main-tasks-container {
+		margin-top: 60px;
+		overflow-y: visible;
+		height: 100%;
+	}
+}
+
+@media (min-height: 600px) and (max-height: 749px) and (max-width: 720px) {
+	.main-tasks-container {
+		margin-top: -40px;
+		overflow-y: visible;
+		height: 100%;
+	}
+}
+
+@media (min-height: 450px) and (max-height: 599px) and (max-width: 1300px) {
+	.main-tasks-container {
+		margin-top: 40px;
+		overflow-y: visible;
+		height: 100%;
+	}
+}
+
+@media (min-height: 450px) and (max-height: 599px) and (max-width: 720px) {
+	.main-tasks-container {
+		margin-top: -30px;
+		overflow-y: visible;
+		height: 100%;
+	}
+}

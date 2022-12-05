@@ -1,0 +1,2270 @@
+html {
+	scroll-behavior: smooth;
+	/* Standard */
+}
+
+body {
+	margin: 0px;
+	/* Browser-Standard rückgängig machen: Äußerer Abstand */
+	font-family: "Inter";
+	/* Schriftart für den ganzen Body-Bereich festlegen */
+	overflow-x: hidden;
+	/* Standard: Was auf der X-Achse aus dem Body/Tag rausläuft wird nicht mehr gezeigt */
+	/* muss dem Body gegeben werden, ABER funktioniert nicht auf dem Handy -> Lösung: Alles in eine <div> was in <body> ist und diesem <div> das overflow-Attribut geben */
+	overflow-y: hidden;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+}
+
+/* FORM */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dummy {
+	width: 150px;
+	height: 35px;
+	border-top: 3px solid #29abe2;
+}
+
+::placeholder {
+	color: #d1d1d1;
+}
+
+.center-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
+}
+
+.formular-inputdesign {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 51px;
+	width: 422px;
+	margin-bottom: 50px;
+	border: 1px solid #d1d1d1;
+	border-radius: 10px;
+}
+
+.formular-inputdesign input {
+	border: none;
+	font-size: 21px;
+	outline: none;
+	padding-left: 15px;
+	height: 48px;
+	border-radius: 30px;
+	width: 100%;
+}
+
+.formular-inputdesign:hover {
+	cursor: pointer;
+}
+
+.formular-inputdesign input:hover {
+	cursor: pointer;
+}
+
+.formular-inputdesign img {
+	margin-right: 15px;
+}
+
+.d-none {
+	display: none;
+}
+
+/* LOGIN */
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f5f5;
+	height: 100vh;
+}
+
+.login-container2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.login-Box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 30px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	height: 513px;
+	width: 652px;
+}
+
+.moving-logo {
+	position: absolute;
+	left: 50px;
+	top: 25px;
+	width: 101px;
+	height: 122px;
+}
+
+.moving-logo-first {
+	position: absolute;
+	z-index: 11;
+	left: calc(100vw - 50% - 101px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+	top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+	width: 202px;
+	height: 244px;
+}
+
+.moving-logo-later {
+	display: none;
+	position: absolute;
+	z-index: 11;
+	left: 50px;
+	top: 25px;
+	width: 101px;
+	height: 122px;
+}
+
+.moving-logo-later-index2 {
+	display: flex;
+	position: absolute;
+	z-index: 11;
+	left: 50px;
+	top: 25px;
+	width: 101px;
+	height: 122px;
+}
+
+.moving-logo-first-mobile {
+	position: absolute;
+	z-index: 10;
+	left: calc(100vw - 50% - 101px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+	top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+	width: 202px;
+	height: 244px;
+}
+
+.moving-logo-later-mobile {
+	position: absolute;
+	z-index: 10;
+	left: 50px;
+	top: 25px;
+	width: 101px;
+	height: 122px;
+}
+
+.login-Box h1 {
+	font-size: 61px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}
+
+.login-rememberOrforgotPw {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 12.5px;
+	width: calc(161px * 2 + 12.5px * 2);
+}
+
+.login-rememberOrforgotPw a {
+	color: #29abe2 !important;
+	cursor: pointer;
+}
+
+.login-cbx input {
+	margin-right: 20px;
+	height: 16px;
+	width: 16px;
+}
+
+.login-cbx {
+	display: flex;
+	align-items: center;
+}
+
+.login-forgotpw {
+	padding-right: 5px;
+}
+
+.login-buttons {
+	margin: 12.5px;
+	margin-bottom: 0 !important;
+}
+
+.login-user {
+	height: 51px;
+	width: 161px;
+	font-size: 21px;
+	border-radius: 8px;
+	color: #ffffff;
+	font-weight: bold;
+	margin-right: 12.5px;
+	box-shadow: none;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+.login-user:hover {
+	background-color: #29abe2;
+	border: 1px solid #29abe2;
+}
+
+.login-guest {
+	height: 51px;
+	width: 161px;
+	font-size: 21px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	color: #091931;
+	font-weight: bold;
+	border: 1px solid #091931;
+	margin-left: 12.5px;
+}
+
+.login-guest:hover {
+	color: #29abe2;
+	border-color: #29abe2;
+}
+
+.login-notajoinuser {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+}
+
+.login-notajoinuser span {
+	font-size: 21px;
+	margin-right: 25px;
+}
+
+.login-signupbtn {
+	height: 51px;
+	width: 91px;
+	font-size: 19px;
+	border-radius: 8px;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+.login-signupbtn:hover {
+	background-color: #29abe2;
+	border: 1px solid #29abe2;
+}
+
+.whiteBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: white;
+}
+
+/* Login-Animation */
+.animate-logo {
+	animation: moveJOINLogo 1000ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveJOINLogo {
+	from {
+		left: calc(100vw - 50% - 101px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+		top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+		width: 202px;
+		height: 244px;
+	}
+	to {
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+}
+
+.animate-background {
+	animation: bg-transparent 1000ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes bg-transparent {
+	from {
+		opacity: 1;
+		z-index: 1;
+	}
+	to {
+		opacity: 0;
+		z-index: 0;
+	}
+}
+/* Login-Animation */
+
+/* Login-Animation-Mobile */
+.animate-logo-mobile {
+	animation: moveJOINLogoMobile 1000ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveJOINLogoMobile {
+	from {
+		left: calc(100vw - 50% - 101px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+		top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+		width: 202px;
+		height: 244px;
+	}
+	to {
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+}
+/* Login-Animation-Mobile */
+
+/* SIGN UP */
+.signup-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f5f5;
+	height: 100vh;
+}
+
+.signup-Box {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 30px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+	height: 559px;
+	width: 652px;
+}
+
+.signup-Box h1 {
+	font-size: 61px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}
+
+.backbutton {
+	display: flex;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	cursor: pointer;
+}
+
+.signup-user {
+	height: 51px;
+	width: 145px;
+	font-size: 21px;
+	border-radius: 8px;
+	color: #ffffff;
+	font-weight: bold;
+	margin-right: 12.5px;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+.signup-user:hover {
+	background-color: #29abe2;
+	border: 1px solid #29abe2;
+}
+
+/* RESET PASSWORD */
+.resetpassword-Box {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 30px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+	height: 537px;
+	width: 826px;
+}
+
+.resetpassword-Box h1 {
+	font-size: 61px;
+	font-weight: bold;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+}
+
+.resetpassword-Box span {
+	font-size: 21px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+}
+
+.reset-user {
+	height: 51px;
+	width: 264px;
+	font-size: 21px;
+	border-radius: 8px;
+	color: #ffffff;
+	font-weight: bold;
+	margin-right: 12.5px;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+.reset-user:hover {
+	background-color: #29abe2;
+	border: 1px solid #29abe2;
+}
+
+/* ResetPw-Animation */
+#reset-info {
+	position: absolute;
+	top: 100vh;
+	left: calc(100% - 50vw - 326px / 2);
+	z-index: 99;
+	height: 74px;
+	width: 326px;
+	font-size: 23px;
+	border-radius: 20px;
+	color: #ffffff;
+	font-weight: 400;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+#resetpw-box {
+	position: absolute;
+	background-color: #091931;
+	z-index: 100;
+	opacity: 0.2;
+	width: 100vw;
+	height: 100vh;
+}
+
+.animate-resetPw {
+	animation: resetPwbutton 325ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes resetPwbutton {
+	from {
+		top: 100vh;
+	}
+	to {
+		top: calc(100% - 50vh - 74px / 2);
+	}
+}
+/* ResetPw-Animation */
+
+/* FORGOT PASSWORD */
+.forgotpassword-Box {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 30px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	height: 513px;
+	width: 826px;
+}
+
+.forgotpassword-Box h1 {
+	font-size: 61px;
+	font-weight: bold;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+}
+
+.forgotpassword-Box span {
+	font-size: 21px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	margin-left: 83px;
+	margin-right: 83px;
+	text-align: center;
+}
+
+.forgotpassword-send {
+	height: 51px;
+	width: 264px;
+	font-size: 21px;
+	border-radius: 8px;
+	color: #ffffff;
+	font-weight: bold;
+	margin-right: 12.5px;
+	box-shadow: none;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+.forgotpassword-send:hover {
+	background-color: #29abe2;
+	border: 1px solid #29abe2;
+}
+
+/* Wrong PW or EMail-Animation */
+#alert-info {
+	position: absolute;
+	top: 100vh;
+	left: calc(100% - 50vw - 326px / 2);
+	z-index: 99;
+	height: 74px;
+	width: 326px;
+	font-size: 23px;
+	border-radius: 20px;
+	color: #ffffff;
+	font-weight: 400;
+	background-color: #091931;
+	border: 1px solid #091931;
+}
+
+#alert-info img {
+	padding-right: 15px;
+}
+
+#alert-box {
+	position: absolute;
+	background-color: #091931;
+	z-index: 100;
+	opacity: 0.2;
+	width: 100vw;
+	height: 100vh;
+}
+
+.animate-Wrong {
+	animation: wrongButton 325ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes wrongButton {
+	from {
+		top: 100vh;
+	}
+	to {
+		top: calc(100% - 50vh - 74px / 2);
+	}
+}
+/* Wrong PW or EMail-Animation */
+
+/* Keep white background-color for ALL input-fields when autocomplete is activated for a form (<form autocomplete="on">) */
+input:-webkit-autofill {
+	-webkit-text-fill-color: black; /* Textfarbe bleibt bei schwarz (könnte man auch rausnehmen) */
+	-webkit-box-shadow: inset 0 0 0px 1000px white; /* Input-Feld behält den weißen Hintergrund, statt auf hellblau zu wechseln! */
+}
+
+/* MOBILE */
+.mobilelogo {
+	display: none;
+}
+
+/* INTERVALLE FÜRS HANDY */
+@media (min-width: 753px) and (max-width: 926px) {
+	.center-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100vw;
+		z-index: 0;
+	}
+
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.signup-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.dummy {
+		width: 88px;
+		height: 35px;
+		border-top: 3px solid #29abe2;
+	}
+
+	.login-notajoinuser {
+		position: absolute;
+		right: calc(50vw - 140px);
+		top: calc(50vh + 257px + 61px + 30px);
+	}
+
+	.logo-for-mobile {
+		display: flex;
+		position: absolute;
+		z-index: 11;
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+
+	.forgotpassword-Box {
+		width: 372px;
+		height: 502px;
+	}
+
+	.resetpassword-Box {
+		width: 372px;
+		height: 525px;
+	}
+
+	.moving-logo-later {
+		display: flex;
+		width: 64px;
+		height: 78px;
+		z-index: 10;
+	}
+
+	.moving-logo-later-index2 {
+		display: flex;
+		width: 64px;
+		height: 78px;
+		z-index: 10;
+	}
+
+	.moving-logo-first {
+		z-index: 10;
+	}
+
+	.moving-logo-later-mobile {
+		width: 64px;
+		height: 78px;
+		z-index: 11;
+	}
+
+	.moving-logo-first-mobile {
+		z-index: 11;
+	}
+
+	.login-Box {
+		height: 573px;
+		width: 372px;
+	}
+
+	.form-style {
+		width: calc(100% - 50px);
+	}
+
+	.formular-inputdesign {
+		width: auto;
+		height: 41px;
+		margin-bottom: 20px;
+	}
+
+	.formular-inputdesign input {
+		height: 39px;
+	}
+
+	/* Login-Animation */
+	.animate-logo {
+		animation: moveJOINLogo 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	.whiteBackground {
+		display: none;
+	}
+
+	@keyframes moveJOINLogo {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+			opacity: 1;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 101px;
+			height: 122px;
+			opacity: 0;
+		}
+	}
+	/* Login-Animation */
+
+	/* Login-Animation-Mobile */
+	.animate-logo-mobile {
+		animation: moveJOINLogoMobile 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogoMobile {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 101px;
+			height: 122px;
+		}
+	}
+	/* Login-Animation-Mobile */
+
+	/* MOBILE-LOGO ANIMATION */
+	.mobilelogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: #091931;
+		z-index: 9;
+		opacity: 1;
+	}
+
+	.animate-mobile {
+		animation: mobilebackgroundanimation 3000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes mobilebackgroundanimation {
+		from {
+			opacity: 1;
+			display: flex;
+		}
+		to {
+			opacity: 0;
+			z-index: -1;
+			display: none;
+		}
+	}
+	/* MOBILE-LOGO ANIMATION */
+
+	/* LOGIN */
+	.login-rememberOrforgotPw {
+		flex-direction: column-reverse;
+		width: 100%;
+		margin: 0;
+	}
+
+	.login-buttons {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.login-user {
+		font-size: 16px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.login-guest {
+		font-size: 16px;
+		margin: 0px;
+	}
+
+	.login-signupbtn {
+		font-size: 16px;
+	}
+
+	.login-Box h1 {
+		font-size: 47px;
+	}
+
+	.login-cbx {
+		margin-top: 20px;
+	}
+
+	.adj {
+		margin-bottom: 20px !important;
+	}
+
+	form {
+		width: 327px;
+	}
+
+	/* SIGNUP */
+	.signup-Box h1 {
+		font-size: 47px;
+	}
+
+	.signup-Box {
+		height: 501px;
+		width: 372px;
+	}
+
+	.signup-user {
+		width: 180px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.backbutton {
+		left: 35px;
+		top: 22px;
+		width: 16px;
+		height: 15.56px;
+	}
+
+	/* FORGOT PW */
+	.forgotpassword-Box h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.forgotpassword-Box span {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.forgotpassword-send {
+		width: 180px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	/* RESET PASSWORD */
+	.resetpassword-Box h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.reset-user {
+		height: 51px;
+		width: 180px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 429px) and (max-width: 752px) {
+	.center-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0;
+	}
+
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.signup-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.dummy {
+		width: 88px;
+		height: 20px;
+		border-top: 3px solid #29abe2;
+	}
+
+	.login-notajoinuser {
+		position: absolute;
+		right: calc(50vw - 198px / 2);
+		top: calc(50vh + 443px / 2 + 25px);
+	}
+
+	.login-notajoinuser span {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	.logo-for-mobile {
+		display: flex;
+		position: absolute;
+		z-index: 11;
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+
+	.moving-logo-later {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-later-index2 {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-first {
+		z-index: 10;
+	}
+
+	.moving-logo-later-mobile {
+		width: 44px;
+		height: 53.625px;
+		z-index: 11;
+	}
+
+	.moving-logo-first-mobile {
+		z-index: 11;
+	}
+
+	.login-Box {
+		height: 443px;
+		width: 372px;
+	}
+
+	.form-style {
+		width: calc(100% - 50px);
+	}
+
+	.formular-inputdesign {
+		width: auto;
+		height: 41px;
+		margin-bottom: 20px;
+	}
+
+	.formular-inputdesign input {
+		height: 39px;
+	}
+	.whiteBackground {
+		display: none;
+	}
+
+	/* Login-Animation */
+	.animate-logo {
+		animation: moveJOINLogo 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogo {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+			opacity: 1;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+			opacity: 0;
+		}
+	}
+	/* Login-Animation */
+
+	/* Login-Animation-Mobile */
+	.animate-logo-mobile {
+		animation: moveJOINLogoMobile 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogoMobile {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+		}
+	}
+	/* Login-Animation-Mobile */
+
+	/* MOBILE-LOGO ANIMATION */
+	.mobilelogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: #091931;
+		z-index: 9;
+		opacity: 1;
+	}
+
+	.animate-mobile {
+		animation: mobilebackgroundanimation 3000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes mobilebackgroundanimation {
+		from {
+			opacity: 1;
+			display: flex;
+		}
+		to {
+			opacity: 0;
+			z-index: -1;
+			display: none;
+		}
+	}
+	/* MOBILE-LOGO ANIMATION */
+
+	/* LOGIN */
+	.login-rememberOrforgotPw {
+		flex-direction: column-reverse;
+		width: 100%;
+		margin: 0;
+		font-size: 11px;
+	}
+
+	.login-buttons {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.login-user {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.login-guest {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	.login-signupbtn {
+		font-size: 14px;
+	}
+
+	.login-Box h1 {
+		font-size: 27px;
+	}
+
+	.login-cbx {
+		margin-top: 20px;
+	}
+
+	.adj {
+		margin-bottom: 20px !important;
+	}
+
+	form {
+		width: 327px;
+	}
+
+	/* SIGNUP */
+	.signup-Box {
+		height: 401px;
+		width: calc(100vw - 100px);
+	}
+
+	.signup-Box h1 {
+		font-size: 37px;
+	}
+
+	.signup-user {
+		height: 41px;
+		width: 111px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.backbutton {
+		left: 25px;
+		top: 16px;
+		width: 12px;
+		height: 12px;
+	}
+
+	/* FORGOT PW */
+	.forgotpassword-Box {
+		width: 372px;
+		height: 400px;
+	}
+
+	.forgotpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+	}
+
+	.forgotpassword-Box span {
+		font-size: 14px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.forgotpassword-send {
+		width: 150px;
+		height: 41px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	/* RESET PASSWORD */
+	.resetpassword-Box {
+		width: 372px;
+		height: 400px;
+	}
+
+	.resetpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+	}
+
+	.resetpassword-Box span {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.reset-user {
+		height: 41px;
+		width: 111px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	#alert-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+
+	#reset-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 428px) {
+	.center-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0;
+	}
+
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.signup-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.dummy {
+		width: 88px;
+		height: 20px;
+		border-top: 3px solid #29abe2;
+	}
+
+	.logo-for-mobile {
+		display: flex;
+		position: absolute;
+		z-index: 11;
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+
+	.moving-logo-later {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-later-index2 {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-first {
+		z-index: 10;
+	}
+
+	.moving-logo-later-mobile {
+		width: 44px;
+		height: 53.625px;
+		z-index: 11;
+	}
+
+	.moving-logo-first-mobile {
+		z-index: 11;
+	}
+
+	.login-Box {
+		height: 443px;
+		width: calc(100vw - 56px);
+	}
+
+	.form-style {
+		width: calc(100% - 56px);
+	}
+
+	.formular-inputdesign {
+		width: 100%;
+		height: 41px;
+		margin-bottom: 20px;
+	}
+
+	.formular-inputdesign input {
+		height: 39px;
+		font-size: 12px;
+	}
+	.whiteBackground {
+		display: none;
+	}
+
+	/* Login-Animation */
+	.animate-logo {
+		animation: moveJOINLogo 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogo {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+			opacity: 1;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+			opacity: 0;
+		}
+	}
+	/* Login-Animation */
+
+	/* Login-Animation-Mobile */
+	.animate-logo-mobile {
+		animation: moveJOINLogoMobile 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogoMobile {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+		}
+	}
+	/* Login-Animation-Mobile */
+
+	/* MOBILE-LOGO ANIMATION */
+	.mobilelogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: #091931;
+		z-index: 9;
+		opacity: 1;
+	}
+
+	.animate-mobile {
+		animation: mobilebackgroundanimation 3000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes mobilebackgroundanimation {
+		from {
+			opacity: 1;
+			display: flex;
+		}
+		to {
+			opacity: 0;
+			z-index: -1;
+			display: none;
+		}
+	}
+	/* MOBILE-LOGO ANIMATION */
+
+	/* LOGIN */
+	.login-rememberOrforgotPw {
+		flex-direction: column-reverse;
+		margin: 0;
+		width: auto;
+		font-size: 11px;
+	}
+
+	.login-notajoinuser {
+		position: absolute;
+		right: calc(50vw - 198px / 2);
+		top: calc(50vh + 443px / 2 + 25px);
+	}
+
+	.login-notajoinuser span {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	.login-signupbtn {
+		height: 41px;
+		width: 81px;
+		font-size: 14px;
+	}
+
+	.login-buttons {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.login-user {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.login-guest {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	.login-Box h1 {
+		font-size: 27px;
+	}
+
+	.login-cbx {
+		margin-top: 20px;
+	}
+
+	.adj {
+		margin-bottom: 20px !important;
+	}
+
+	form {
+		width: 327px;
+	}
+
+	/* SIGNUP */
+	.signup-Box {
+		height: 401px;
+		width: calc(100vw - 56px);
+	}
+
+	.signup-Box h1 {
+		font-size: 37px;
+	}
+
+	.signup-user {
+		height: 41px;
+		width: 111px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.backbutton {
+		left: 25px;
+		top: 16px;
+		width: 12px;
+		height: 12px;
+	}
+
+	/* FORGOT PW */
+	.forgotpassword-Box {
+		width: calc(100vw - 56px);
+		height: 400px;
+	}
+
+	.forgotpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.forgotpassword-Box span {
+		font-size: 14px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.forgotpassword-send {
+		width: 150px;
+		height: 41px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	/* RESET PASSWORD */
+	.resetpassword-Box {
+		width: calc(100vw - 56px) !important;
+		height: 400px;
+	}
+
+	.resetpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.resetpassword-Box span {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.reset-user {
+		height: 41px;
+		width: 111px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	#alert-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+
+	#reset-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+}
+
+@media (min-width: 280px) and (max-width: 299px) {
+	.center-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0;
+	}
+
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.signup-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.dummy {
+		width: 88px;
+		height: 20px;
+		border-top: 3px solid #29abe2;
+	}
+
+	.logo-for-mobile {
+		display: flex;
+		position: absolute;
+		z-index: 11;
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+
+	.moving-logo-later {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-later-index2 {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-first {
+		z-index: 10;
+	}
+
+	.moving-logo-later-mobile {
+		width: 44px;
+		height: 53.625px;
+		z-index: 11;
+	}
+
+	.moving-logo-first-mobile {
+		z-index: 11;
+	}
+
+	.login-Box {
+		height: 443px;
+		width: calc(100vw - 56px);
+	}
+
+	.form-style {
+		width: calc(100% - 56px);
+	}
+
+	.formular-inputdesign {
+		width: 100%;
+		height: 41px;
+		margin-bottom: 20px;
+	}
+
+	.formular-inputdesign input {
+		height: 39px;
+		font-size: 10px;
+	}
+
+	.whiteBackground {
+		display: none;
+	}
+
+	/* Login-Animation */
+	.animate-logo {
+		animation: moveJOINLogo 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogo {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+			opacity: 1;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+			opacity: 0;
+		}
+	}
+	/* Login-Animation */
+
+	/* Login-Animation-Mobile */
+	.animate-logo-mobile {
+		animation: moveJOINLogoMobile 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogoMobile {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+		}
+	}
+	/* Login-Animation-Mobile */
+
+	/* MOBILE-LOGO ANIMATION */
+	.mobilelogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: #091931;
+		z-index: 9;
+		opacity: 1;
+	}
+
+	.animate-mobile {
+		animation: mobilebackgroundanimation 3000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes mobilebackgroundanimation {
+		from {
+			opacity: 1;
+			display: flex;
+		}
+		to {
+			opacity: 0;
+			z-index: -1;
+			display: none;
+		}
+	}
+	/* MOBILE-LOGO ANIMATION */
+
+	/* LOGIN */
+	.login-rememberOrforgotPw {
+		flex-direction: column-reverse;
+		margin: 0;
+		width: auto;
+		font-size: 11px;
+	}
+
+	.login-notajoinuser {
+		position: absolute;
+		right: calc(50vw - 198px / 2);
+		top: calc(50vh + 443px / 2 + 25px);
+	}
+
+	.login-notajoinuser span {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	.login-signupbtn {
+		height: 41px;
+		width: 81px;
+		font-size: 14px;
+	}
+
+	.login-buttons {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.login-user {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.login-guest {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	.login-Box h1 {
+		font-size: 27px;
+	}
+
+	.login-cbx {
+		margin-top: 20px;
+	}
+
+	.adj {
+		margin-bottom: 20px !important;
+	}
+
+	form {
+		width: 327px;
+	}
+
+	/* SIGNUP */
+	.signup-Box {
+		height: 401px;
+		width: calc(100vw - 56px);
+	}
+
+	.signup-Box h1 {
+		font-size: 37px;
+	}
+
+	.signup-user {
+		height: 41px;
+		width: 111px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.backbutton {
+		left: 25px;
+		top: 16px;
+		width: 12px;
+		height: 12px;
+	}
+
+	/* FORGOT PW */
+	.forgotpassword-Box {
+		width: calc(100vw - 56px);
+		height: 400px;
+	}
+
+	.forgotpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.forgotpassword-Box span {
+		font-size: 14px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.forgotpassword-send {
+		width: 150px;
+		height: 41px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	/* RESET PASSWORD */
+	.resetpassword-Box {
+		width: calc(100vw - 56px) !important;
+		height: 400px;
+	}
+
+	.resetpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.resetpassword-Box span {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.reset-user {
+		height: 41px;
+		width: 111px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	#alert-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+
+	#reset-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 279px) {
+	/* Ab hier leer lassen */
+}
+
+/* For Nest-Hub */
+@media (min-height: 0px) and (max-height: 600px) {
+	.center-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0;
+	}
+
+	.login-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.signup-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f5f5f5;
+		height: 100vh;
+	}
+
+	.dummy {
+		width: 88px;
+		height: 20px;
+		border-top: 3px solid #29abe2;
+	}
+
+	.logo-for-mobile {
+		display: flex;
+		position: absolute;
+		z-index: 11;
+		left: 50px;
+		top: 25px;
+		width: 101px;
+		height: 122px;
+	}
+
+	.moving-logo-later {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-later-index2 {
+		display: flex;
+		width: 44px;
+		height: 53.625px;
+		z-index: 10;
+	}
+
+	.moving-logo-first {
+		z-index: 10;
+	}
+
+	.moving-logo-later-mobile {
+		width: 44px;
+		height: 53.625px;
+		z-index: 11;
+	}
+
+	.moving-logo-first-mobile {
+		z-index: 11;
+	}
+
+	.login-Box {
+		height: 400px;
+		width: calc(100vw - 56px);
+	}
+
+	.form-style {
+		width: calc(100% - 56px);
+	}
+
+	.formular-inputdesign {
+		width: 100%;
+		height: 41px;
+		margin-bottom: 20px;
+	}
+
+	.formular-inputdesign input {
+		height: 39px;
+		font-size: 10px;
+	}
+
+	.whiteBackground {
+		display: none;
+	}
+
+	/* Login-Animation */
+	.animate-logo {
+		animation: moveJOINLogo 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogo {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+			opacity: 1;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+			opacity: 0;
+		}
+	}
+	/* Login-Animation */
+
+	/* Login-Animation-Mobile */
+	.animate-logo-mobile {
+		animation: moveJOINLogoMobile 1000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes moveJOINLogoMobile {
+		from {
+			left: calc(
+				100vw - 50% - 101px
+			); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Breite des Bildes abgezogen werden */
+			top: calc(100vh - 50% - 122px); /* Um mittig zu positionieren muss zusätzlich die Hälfte der Höhe des Bildes abgezogen werden */
+			width: 202px;
+			height: 244px;
+		}
+		to {
+			left: 50px;
+			top: 25px;
+			width: 44px;
+			height: 53.625px;
+		}
+	}
+	/* Login-Animation-Mobile */
+
+	/* MOBILE-LOGO ANIMATION */
+	.mobilelogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background-color: #091931;
+		z-index: 9;
+		opacity: 1;
+	}
+
+	.animate-mobile {
+		animation: mobilebackgroundanimation 3000ms ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes mobilebackgroundanimation {
+		from {
+			opacity: 1;
+			display: flex;
+		}
+		to {
+			opacity: 0;
+			z-index: -1;
+			display: none;
+		}
+	}
+	/* MOBILE-LOGO ANIMATION */
+
+	/* LOGIN */
+	.login-rememberOrforgotPw {
+		flex-direction: column-reverse;
+		margin: 0;
+		width: auto;
+		font-size: 11px;
+	}
+
+	.login-notajoinuser {
+		position: absolute;
+		right: calc(50vw - 198px / 2);
+		top: calc(50vh + 443px / 2 + 25px);
+	}
+
+	.login-notajoinuser span {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	.login-signupbtn {
+		height: 41px;
+		width: 81px;
+		font-size: 14px;
+	}
+
+	.login-buttons {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.login-user {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.login-guest {
+		height: 41px;
+		width: 141px;
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	.login-Box h1 {
+		font-size: 27px;
+	}
+
+	.login-cbx {
+		margin-top: 20px;
+	}
+
+	.adj {
+		margin-bottom: 20px !important;
+	}
+
+	form {
+		width: 327px;
+	}
+
+	/* SIGNUP */
+	.signup-Box {
+		height: 401px;
+		width: calc(100vw - 56px);
+	}
+
+	.signup-Box h1 {
+		font-size: 37px;
+	}
+
+	.signup-user {
+		height: 41px;
+		width: 111px;
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.backbutton {
+		left: 25px;
+		top: 16px;
+		width: 12px;
+		height: 12px;
+	}
+
+	/* FORGOT PW */
+	.forgotpassword-Box {
+		width: calc(100vw - 56px);
+		height: 400px;
+	}
+
+	.forgotpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.forgotpassword-Box span {
+		font-size: 14px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.forgotpassword-send {
+		width: 150px;
+		height: 41px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	/* RESET PASSWORD */
+	.resetpassword-Box {
+		width: calc(100vw - 56px) !important;
+		height: 400px;
+	}
+
+	.resetpassword-Box h1 {
+		font-size: 27px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.resetpassword-Box span {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.reset-user {
+		height: 41px;
+		width: 111px;
+		font-size: 14px;
+		margin-right: 0;
+	}
+
+	#alert-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+
+	#reset-info {
+		position: absolute;
+		top: 100vh;
+		left: calc(100% - 50vw - 276px / 2);
+		z-index: 99;
+		height: 74px;
+		width: 276px;
+		font-size: 19px;
+		border-radius: 20px;
+		color: #ffffff;
+		font-weight: 400;
+		background-color: #091931;
+		border: 1px solid #091931;
+	}
+}

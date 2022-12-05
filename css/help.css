@@ -1,0 +1,252 @@
+html {
+	scroll-behavior: smooth;
+	/* Standard */
+}
+
+body {
+	margin: 0px;
+	/* Browser-Standard rückgängig machen: Äußerer Abstand */
+	font-family: "Inter";
+	/* Schriftart für den ganzen Body-Bereich festlegen */
+	overflow-x: hidden;
+	/* Standard: Was auf der X-Achse aus dem Body/Tag rausläuft wird nicht mehr gezeigt */
+	/* muss dem Body gegeben werden, ABER funktioniert nicht auf dem Handy -> Lösung: Alles in eine <div> was in <body> ist und diesem <div> das overflow-Attribut geben */
+	display: flex;
+	flex-direction: column;
+	background-color: #f5f5f5;
+}
+
+/* HELP */
+.help-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #f5f5f5;
+	width: calc(100vw - 232px);
+	margin-top: 80px;
+	margin-bottom: 80px;
+	margin-left: 232px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+.mobile-headline {
+	display: none;
+}
+
+.help-container h1 {
+	font-weight: 700;
+	font-size: 61px;
+	margin: 50px;
+}
+
+.subsection {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 50px;
+	margin-bottom: 25px;
+}
+
+.whatisjoin {
+	font-weight: 700;
+	font-size: 27px;
+}
+
+.howtouseit {
+	font-weight: 700;
+	font-size: 27px;
+	margin-bottom: 25px;
+}
+
+.subsection span {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.backbutton {
+	display: flex;
+	position: absolute;
+	right: calc(31px / 2 + 60px + 2 * 15px);
+	top: calc(80px + 50px);
+	height: 24px;
+	width: 24.66px;
+	cursor: pointer;
+}
+
+.bulletpoint {
+	margin-right: 40px;
+	font-weight: 700;
+	font-size: 27px;
+}
+
+/* INTERVALLE FÜRS HANDY */
+@media (min-width: 1101px) and (max-width: 1200px) {
+}
+
+@media (min-width: 951px) and (max-width: 1100px) {
+	.help-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background-color: #f5f5f5;
+		width: calc(100vw - 232px);
+		margin-top: 80px;
+		margin-bottom: 80px;
+		margin-left: 232px;
+		padding-left: 45px;
+		padding-right: 75px;
+	}
+}
+
+@media (min-width: 901px) and (max-width: 950px) {
+	.help-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background-color: #f5f5f5;
+		width: calc(100vw - 232px);
+		margin-top: 80px;
+		margin-bottom: 80px;
+		margin-left: 232px;
+		padding-left: 5px;
+		padding-right: 75px;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+	/* Handy-Ansicht ab 900 */
+	.help-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left: 0;
+		margin-top: 80px;
+		margin-bottom: 80px;
+		width: 100%;
+		height: calc(100vh - 160px);
+		padding-left: 0;
+		padding-right: 50px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	.help-container h1 {
+		font-weight: 700;
+		font-size: 47px;
+		margin: 50px;
+		margin-top: 0px;
+	}
+
+	.mobile-headline {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 50px;
+	}
+
+	.mobile-headline span {
+		font-size: 16px;
+		border-left: none;
+		padding-left: 0;
+	}
+
+	.howtouseit {
+		display: none;
+	}
+
+	.backbutton {
+		display: flex;
+		position: absolute;
+		right: calc(90px / 2 - 24.66px / 2); /*So lassen, weil wenn Schrift 16px ist dann passt es*/
+		top: calc(111px);
+		height: 24px;
+		width: 24.66px;
+		cursor: pointer;
+	}
+
+	.hide-scrollbar {
+		background-color: #f5f5f5;
+		height: calc(100vh - 80px);
+		width: calc(100vw + 15px);
+	}
+
+	.howtouseit-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.howtouseit-container2 {
+		width: 100%;
+		display: flex;
+	}
+}
+
+@media (min-width: 280px) and (max-width: 399px) {
+	.help-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left: 0;
+		margin-top: 80px;
+		margin-bottom: 80px;
+		width: 100%;
+		height: calc(100vh - 160px);
+		padding-left: 0;
+		padding-right: 50px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	.help-container h1 {
+		font-weight: 700;
+		font-size: 47px;
+		margin: 50px;
+		margin-top: 0px;
+	}
+
+	.mobile-headline {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 50px;
+	}
+
+	.mobile-headline span {
+		font-size: 16px;
+		border-left: none;
+		padding-left: 0;
+	}
+
+	.backbutton {
+		display: flex;
+		position: absolute;
+		right: calc(90px / 2 - 24.66px / 2); /*So lassen, weil wenn Schrift 16px ist dann passt es*/
+		top: calc(111px);
+		height: 24px;
+		width: 24.66px;
+		cursor: pointer;
+	}
+
+	.howtouseit {
+		display: none;
+	}
+
+	.hide-scrollbar {
+		background-color: #f5f5f5;
+		height: calc(100vh - 80px);
+		width: calc(100vw + 15px);
+	}
+}
+
+@media (min-width: 0px) and (max-width: 279px) {
+	/* Ab hier leer lassen */
+}
