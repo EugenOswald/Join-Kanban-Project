@@ -445,7 +445,7 @@ function contactInformationHTML(fullName, userColor, userEmail, userPhone) {
         <div class="contactInformationEmailPhone">
             <div class="contactInformationEmail">
                 <p>Email<br>
-                    <a href= "${userEmail}">${userEmail}</a>
+                    <a href= "mailto:${userEmail}">${userEmail}</a>
                 </p>
             </div>
             <div class="contactInformationPhone">

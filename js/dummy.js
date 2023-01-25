@@ -20,6 +20,16 @@ let usersScript = [
 		password: "cheeseee",
 		color: "#ff8a00",
 	},
+
+	{
+		name: "Guest Guest",
+		surname: "Guest",
+		picture: "randomprofilepicture.webp",
+		email: "guest@test.de",
+		phone: "",
+		password: "none123",
+		color: "#4e963d",
+	},
 ];
 
 /**
